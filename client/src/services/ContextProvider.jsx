@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useCallback } from 'react';
 
 const myContext = createContext();
 
-const API = "http://localhost:8000/api/leads";
+const API = "https://lead-dashboard-nn92.onrender.com/api/leads";
 
 const ContextProvider = ({ children }) => {
   const [leads, setLeads] = useState([]);

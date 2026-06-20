@@ -12,7 +12,7 @@ function LeadDetail() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:8000/api/leads/${id}`)
+    fetch(`https://lead-dashboard-nn92.onrender.com/api/leads/${id}`)
       .then(r => r.json())
       .then(data => {
         if (data.lead) setLead(data.lead);
